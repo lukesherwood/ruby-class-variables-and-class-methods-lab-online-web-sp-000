@@ -30,6 +30,9 @@ def self.artists
   end
   
 def self.genre_count
-     @@genre_counts.for do 
+     @@genre_counts.for do |genre, count|
+     @@genre_counts[genre] ||= 0
+     @@genre_counts[genre] +=1
+     end
 end
 end
