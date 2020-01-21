@@ -32,5 +32,6 @@ def self.artists
 def self.genre_count
   @@genre_counts[@genre].each do |genre|
    @@genre_counts[@genre] += 1
+   @@genre_counts
   end
 end
