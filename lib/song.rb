@@ -37,6 +37,6 @@ def self.genre_count
        @@genre_count[genre] = 1
      end
      @@genre_counts
+  end
 end
-  
 end
