@@ -14,7 +14,7 @@ def initialize(name, artist, genre)
   @@count += 1
   @@genres << genre
   @@artists << artist
-  
+  @@genre_counts[@genre]||=0
   end
 
 def self.count
@@ -30,6 +30,7 @@ def self.artists
   end
   
 def self.genre_count
-  @@genre_counts
+  @@genre_counts[@genre].each do |genre|
+   @@genre_counts[@genre] += 1
   end
 end
