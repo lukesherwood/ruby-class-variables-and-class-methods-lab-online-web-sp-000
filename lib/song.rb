@@ -35,3 +35,4 @@ def self.genre_count
    @@genre_counts
   end
 end
+end
