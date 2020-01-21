@@ -34,7 +34,8 @@ def self.genre_count
      @@genre_counts[genre] ||= 1
      if @@genre_counts[genre] == genre
        @@genre_counts[genre] +=1
-     @@genre_counts
      end
+     end
+     @@genre_counts
 end
 end
